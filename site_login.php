@@ -1,6 +1,6 @@
 <?php
 
-include "connect.php";
+include "php/connect.php";
 
 
 ?>
@@ -23,13 +23,18 @@ include "connect.php";
 
     <section>
         <center>
+
+            <?php 
+                if(isset($errorMessage)) {
+                    echo $errorMessage;
+                }
+            ?>
+
             <div>
-                <input>
-                    <input type="text" name="username" id="username" placeholder="Username"> <br>
+                <form action="php/login.php" method="POST">
                     <input type="email" name="email" id="email" placeholder="E-mail"> <br>
-                    <input type="email" name="repemail" id="repemail" placeholder="Repeat E-Mail"> <br>
                     <input type="password" name="password" id="password" placeholder="Password"> <br>
-                    <input type="password" name="reppassword" id="reppassword" placeholder="Repeat Password"> <br>
+                    <input type="submit" placeholder="Login" name="login-btn">
                 </form>
             </div>
         </center>
