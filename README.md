@@ -1,5 +1,9 @@
 # MO_PHP-Login/Register-System
 
+The MO_PHP-Login/Register-System uses the 
+<a href="LICENSE">Apache 2.0 License</a>
+
+
 ## About MO_PHP-Login/Register-System
 
 ### SQL Server
